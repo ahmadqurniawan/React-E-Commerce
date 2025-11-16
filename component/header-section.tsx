@@ -1,9 +1,14 @@
 import Image from "next/image";
 
+interface HeaderSectionProps {
+  title: string;
+  subTitle: string;
+}
+
 const HeaderSection = ({
   title,
   subTitle
-}) => {
+}: HeaderSectionProps) => {
   return (
     <header className="relative h-60 text-white overflow-hidden">
       <div className="absolute inset-0">
